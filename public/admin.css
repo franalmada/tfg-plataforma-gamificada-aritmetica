@@ -1,0 +1,192 @@
+/* General */
+body {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+}
+
+/* Tarjeta principal */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+    background: #1e3c72;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Botón de cerrar sesión */
+#logoutBtn {
+    background-color: #ff4b5c;
+    border: none;
+    transition: 0.3s;
+}
+
+#logoutBtn:hover {
+    background-color: #ff1e38;
+}
+
+/* Tabla de usuarios */
+.table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Formulario de nuevo usuario */
+.bg-light {
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+form input, form select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Botón de agregar usuario */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Botón de acciones en la tabla */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Modal de edición */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #2a5298;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Botón de guardar en el modal */
+.modal .btn-primary {
+    background-color: #007bff;
+    transition: 0.3s;
+}
+
+.modal .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Tabla de Usuarios */
+.users-table-container {
+    overflow-x: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table-header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: left;
+}
+
+.users-table th, .users-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.users-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* 🔹 Formulario de Registro */
+.user-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-form-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.user-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 120px;
+}
+
+.input-field, .select-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+

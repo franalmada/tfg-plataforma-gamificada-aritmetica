@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que ocupa toda la pantalla */
+    width: 100vw;
+    overflow: hidden; /* Evita scroll innecesario */
+}
+
+/* Estilos del menú */
+#menu-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    width: 100vw;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Contenedor del juego */
+#game-container {
+    width: 100vw; /* Ocupa todo el ancho */
+    height: 100vh; /* Ocupa todo el alto */
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+canvas {
+    display: block;
+    width: 100%; /* Ajuste dinámico */
+    height: 100%;
+}
+
+/* Fondo con degradado animado */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+/* Animación de fondo */
+@keyframes backgroundAnimation {
+    from {
+        background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    }
+    to {
+        background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    }
+}
+
+/* Contenedor del menú */
+#menu-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Animación de salida */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h1 span {
+    color: #ff6f61;
+}
+
+/* Botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #6200ea;
+    color: white;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: #3700b3;
+    transform: scale(1.05);
+}
+
+/* Contenedor del juego */
+#game-container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+}

@@ -1,0 +1,118 @@
+/* 🔹 Fondo animado con degradado */
+body {
+    background: linear-gradient(120deg, #ff6f61, #4caf50, #ffcc00);
+    background-size: 300% 300%;
+    animation: gradientBG 8s ease infinite;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 🔹 Animación del fondo */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🔹 Contenedor principal */
+#menu-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* 🔹 Título principal */
+h1 {
+    font-size: 36px;
+    color: #ff4081;
+    font-weight: bold;
+}
+
+/* 🔹 Destacar "Math Games" en azul */
+span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* 🔹 Texto descriptivo */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Contenedor de los botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 🔹 Botones de juegos */
+.button-container button {
+    font-size: 22px;
+    padding: 15px 30px;
+    margin: 5px;
+    border: 3px solid white; /* 🔹 Borde blanco para mayor visibilidad */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+    font-weight: bold;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Colores de los botones */
+.button-container button:nth-child(1) { background: #ff6f61; color: white; }
+.button-container button:nth-child(2) { background: #27ae60; color: white; }
+.button-container button:nth-child(3) { background: #ffcc00; color: black; }
+
+/* 🔹 Efecto de rebote al pasar el mouse */
+.button-container button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Botón de volver */
+.back-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 20px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
+/* 🔹 Diseño responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .button-container button {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Games 🎮</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+    <div id="menu-container">
+        <h1>Bienvenido a <span>Math Games</span> 🎮</h1>
+        <p>Selecciona un juego para comenzar:</p>
+
+        <div class="button-container">
+            <button onclick="loadGame('atrapa')">🎈 Atrapa y Suma</button>
+            <button onclick="loadGame('salto')">🐸 Salta y Resta</button>
+            <button onclick="loadGame('abejas')">🐝 Colmena Multiplicadora</button>
+        </div>
+
+        <!-- 🔙 Botón para volver al perfil -->
+        <button class="back-button" onclick="window.location.href='perfil.html'">⬅ Volver al Perfil</button>
+    </div>
+
+    <div id="game-container"></div>
+
+    <script>
+        let currentScript = null;
+
+        function loadGame(game) {
+            if (currentScript) {
+                document.body.removeChild(currentScript);
+            }
+
+            document.getElementById('menu-container').classList.add('fade-out');
+            setTimeout(() => {
+                document.getElementById('menu-container').style.display = 'none';
+                document.getElementById('game-container').style.display = 'block';
+                document.getElementById('game-container').innerHTML = '';
+
+                currentScript = document.createElement('script');
+                currentScript.src = `./js/${game}.js`;
+                document.body.appendChild(currentScript);
+            }, 500);
+        }
+    </script>
+
+</body>
+</html>
